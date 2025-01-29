@@ -30,6 +30,13 @@ git clone https://github.com/your-username/note-sharing-app.git
 cd note-sharing-app
 ```
 
+#### 2. Build the Docker Image
+Build the Docker image using the provided Dockerfile:
+
+```
+docker build -t note-sharing-app .
+
+```
 #### 3. Run the Docker Container
 Run the container and map the application port (default: 8000) to your host machine:
 
@@ -40,5 +47,27 @@ docker run -p 8000:8000 note-sharing-app
 Visit the following URL in your web browser:
 ```
 http://127.0.0.1:8000
+
 ```
 
+
+## Project Structure
+```
+NOTE-SHARING-SITE/
+├── .venv/
+├── media/
+├── notes/
+├── NotesSharingProject/
+│   ├── __pycache__/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+├── db.sqlite3
+├── Dockerfile
+├── manage.py
+├── README.md
+├── requirements.txt
+
+```
